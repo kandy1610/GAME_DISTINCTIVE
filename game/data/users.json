@@ -1,0 +1,93 @@
+{
+  "users": [
+    {
+      "username": "ChienMinh",
+      "password": "9466c70d025598f4dee0e4876b22886a72191a1e6521a7315c8abc3ad6c4ad11",
+      "email": "chienbasieu123@gmail.com",
+      "xp": 0,
+      "level": 1,
+      "completed_levels": [
+        1,
+        2,
+        3
+      ],
+      "current_level": 4,
+      "stats": {
+        "games_played": 7,
+        "total_score": 0,
+        "avg_accuracy": 0
+      },
+      "best_times": {
+        "1": 14.832519769668579,
+        "2": 9.972086906433105,
+        "3": 35.0
+      }
+    },
+    {
+      "username": "aaa",
+      "password": "0ffe1abd1a08215353c233d6e009613e95eec4253832a761af28ff37ac5a150c",
+      "email": "1",
+      "xp": 0,
+      "level": 1,
+      "completed_levels": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "current_level": 8,
+      "stats": {
+        "games_played": 24,
+        "total_score": 0,
+        "avg_accuracy": 0
+      },
+      "best_times": {
+        "1": 25.0,
+        "2": 40.0,
+        "3": 22.0,
+        "4": 85.0,
+        "5": 75.0,
+        "6": 110.0,
+        "7": 11.779866695404053,
+        "7": 15.678894519805908
+      }
+    },
+    {
+      "username": "ABC",
+      "password": "9466c70d025598f4dee0e4876b22886a72191a1e6521a7315c8abc3ad6c4ad11",
+      "email": "adsd@gmail.com",
+      "xp": 0,
+      "level": 1,
+      "completed_levels": [],
+      "current_level": 1,
+      "best_times": {},
+      "stats": {
+        "games_played": 0,
+        "total_score": 0,
+        "avg_accuracy": 0
+      }
+    },
+    {
+      "username": "MinhKy",
+      "password": "5994471abb01112afcc18159f6cc74b4f511b99806da59b3caf5a9c173cacfc5",
+      "email": "54321",
+      "xp": 0,
+      "level": 1,
+      "completed_levels": [
+        1
+      ],
+      "current_level": 2,
+      "best_times": {
+        "1": 8.569729328155518
+      },
+      "stats": {
+        "games_played": 1,
+        "total_score": 0,
+        "avg_accuracy": 0
+      }
+    }
+  ]
+}

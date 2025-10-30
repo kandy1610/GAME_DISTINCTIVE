@@ -1,0 +1,65 @@
+BÁO CÁO ĐỘ KHÓ CÁC LEVEL
+==================================================
+Level 1: DỄ (Điểm: 0.248)
+  - Số lượng: 0.7
+  - Kích thước: 0.12
+  - Phân bố: 0.808
+  - Vị trí biên: 0.0
+  - Độ visible: 0.028
+
+Level 2: TRUNG BÌNH (Điểm: 0.448)
+  - Số lượng: 1.0
+  - Kích thước: 0.34
+  - Phân bố: 0.796
+  - Vị trí biên: 0.055
+  - Độ visible: 0.426
+
+Level 3: TRUNG BÌNH (Điểm: 0.337)
+  - Số lượng: 0.3
+  - Kích thước: 0.467
+  - Phân bố: 0.333
+  - Vị trí biên: 0.0
+  - Độ visible: 0.076
+
+Level 4: TRUNG BÌNH (Điểm: 0.33)
+  - Số lượng: 0.5
+  - Kích thước: 0.446
+  - Phân bố: 0.604
+  - Vị trí biên: 0.04
+  - Độ visible: 0.055
+
+Level 5: KHÓ (Điểm: 0.509)
+  - Số lượng: 0.9
+  - Kích thước: 0.726
+  - Phân bố: 0.594
+  - Vị trí biên: 0.022
+  - Độ visible: 0.123
+
+Level 6: TRUNG BÌNH (Điểm: 0.495)
+  - Số lượng: 0.9
+  - Kích thước: 0.756
+  - Phân bố: 0.703
+  - Vị trí biên: 0.022
+  - Độ visible: 0.123
+
+Level 7: KHÓ (Điểm: 0.619)
+  - Số lượng: 1.0
+  - Kích thước: 1.0
+  - Phân bố: 0.706
+  - Vị trí biên: 0.08
+  - Độ visible: 0.323
+
+Level 8: TRUNG BÌNH (Điểm: 0.379)
+  - Số lượng: 0.2
+  - Kích thước: 1.0
+  - Phân bố: 1.0
+  - Vị trí biên: 0.1
+  - Độ visible: 0.426
+
+Level 9: TRUNG BÌNH (Điểm: 0.477)
+  - Số lượng: 0.2
+  - Kích thước: 1.0
+  - Phân bố: 0.47
+  - Vị trí biên: 0.0
+  - Độ visible: 0.476
+
