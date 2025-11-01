@@ -442,7 +442,7 @@ class MainGame(tk.Frame):
             self.level_label.config(text=f"Level {next_level}")
             
             # Tính số level đã mở khóa
-            unlocked_levels = user.get("current_level", 1)
+            games_played = user.get("stats", {}).get("games_played", 0)
             
             # Tính accuracy (tỷ lệ phần trăm điểm đã tìm được)
             completed_levels = user.get("completed_levels", [])  # Giờ đây completed_levels lưu display ID
@@ -462,7 +462,7 @@ class MainGame(tk.Frame):
             accuracy = (total_differences_found / total_differences_all * 100) if total_differences_all > 0 else 0
             
             self.stats_label.config(
-                text=f"Games: {unlocked_levels} | Accuracy: {accuracy:.1f}%")
+                text=f"Games: {games_played} | Accuracy: {accuracy:.1f}%")
 
     def on_show(self):
         self.load_background_gif()
