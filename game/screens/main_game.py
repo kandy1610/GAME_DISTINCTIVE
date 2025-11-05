@@ -349,19 +349,21 @@ class MainGame(tk.Frame):
         tk.Label(header_frame, text="Thời gian", fg="#ff9800", bg="white", 
                 font=("Arial", 9, "bold"), width=8).pack(side="left")
 
-        # Thêm dữ liệu người chơi - HIỆN TẤT CẢ NGƯỜI CHƠI (không chỉ top 5)
-        for i, (username, highest_level, completion_time) in enumerate(ranking_data, 1):
+        # CHỈ HIỂN THỊ TOP 6 NGƯỜI CHƠI
+        display_count = min(6, len(ranking_data))
+        for i in range(display_count):
+            username, highest_level, completion_time = ranking_data[i]
             player_frame = tk.Frame(self.ranking_content, bg="white")
             player_frame.pack(fill="x", pady=2)
 
             # STT
-            rank_color = "#ffd700" if i == 1 else "#c0c0c0" if i == 2 else "#cd7f32" if i == 3 else "#333333"
-            tk.Label(player_frame, text=str(i), fg=rank_color, bg="white", 
+            rank_color = "#ffd700" if i == 0 else "#c0c0c0" if i == 1 else "#cd7f32" if i == 2 else "#333333"
+            tk.Label(player_frame, text=str(i + 1), fg=rank_color, bg="white", 
                     font=("Arial", 8, "bold"), width=3).pack(side="left")
             
             # Tên người chơi (rút gọn nếu quá dài)
             display_name = username if len(username) <= 6 else username[:5] + "…"
-            name_color = "#ffd700" if i == 1 else "#c0c0c0" if i == 2 else "#cd7f32" if i == 3 else "#333333"
+            name_color = "#ffd700" if i == 0 else "#c0c0c0" if i == 1 else "#cd7f32" if i == 2 else "#333333"
             tk.Label(player_frame, text=display_name, fg=name_color, bg="white", 
                     font=("Arial", 8, "bold"), width=8, anchor="w").pack(side="left")
             
@@ -375,6 +377,27 @@ class MainGame(tk.Frame):
             time_text = self.format_time(completion_time) if completion_time > 0 else "--:--"
             time_color = "#4caf50"
             tk.Label(player_frame, text=time_text, fg=time_color, bg="white", 
+                    font=("Arial", 8), width=8).pack(side="left")
+
+        # HIỂN THỊ "..." CHO VỊ TRÍ THỨ 7 TRỞ ĐI
+        if len(ranking_data) > 6:
+            player_frame = tk.Frame(self.ranking_content, bg="white")
+            player_frame.pack(fill="x", pady=2)
+
+            # STT với dấu "..."
+            tk.Label(player_frame, text="7.", fg="#333333", bg="white", 
+                    font=("Arial", 8, "bold"), width=3).pack(side="left")
+            
+            # Tên với dấu "..."
+            tk.Label(player_frame, text="...", fg="#333333", bg="white", 
+                    font=("Arial", 8, "bold"), width=8, anchor="w").pack(side="left")
+            
+            # Level với dấu "..."
+            tk.Label(player_frame, text="...", fg="#333333", bg="white", 
+                    font=("Arial", 8), width=6).pack(side="left")
+            
+            # Thời gian với dấu "..."
+            tk.Label(player_frame, text="...", fg="#333333", bg="white", 
                     font=("Arial", 8), width=8).pack(side="left")
 
         # Nếu không có người chơi nào
