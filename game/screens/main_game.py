@@ -62,7 +62,7 @@ class MainGame(tk.Frame):
         # Đổi bảng xếp hạng thành trắng có viền
         self.ranking_frame = tk.Frame(self.left_frame, bg="white", bd=1, 
                                     relief="solid", highlightbackground="#e0e0e0")
-        self.ranking_frame.place(relx=0.5, rely=0.45, anchor="n", width=250, height=230)
+        self.ranking_frame.place(relx=0.5, rely=0.45, anchor="n", width=250, height=240)
 
         # Tiêu đề bảng xếp hạng - đổi màu chữ
         ranking_title = tk.Label(
@@ -230,7 +230,7 @@ class MainGame(tk.Frame):
             self.ranking_frame.place_forget()  # Ẩn bảng xếp hạng
             self.is_ranking_visible = False
         else:
-            self.ranking_frame.place(relx=0.5, rely=0.45, anchor="n", width=250, height=230)  # Hiện bảng xếp hạng
+            self.ranking_frame.place(relx=0.5, rely=0.45, anchor="n", width=250, height=240)  # Hiện bảng xếp hạng
             self.is_ranking_visible = True
 
     def logout(self):
@@ -448,7 +448,6 @@ class MainGame(tk.Frame):
             return []
 
     def format_time(self, seconds):
-        """Format seconds into MM:SS format"""
         if seconds <= 0:
             return "--:--"
         minutes = int(seconds // 60)
@@ -665,7 +664,7 @@ class MainGame(tk.Frame):
                 img.putalpha(mask)
 
                 border = Image.new("RGBA", (156, 156), (255, 255, 255, 255))
-                border.paste(img, (3, 3), img)  # LƯU Ý: thêm parameter mask
+                border.paste(img, (3, 3), img)
                 img = border
 
                 tk_img = ImageTk.PhotoImage(img)
